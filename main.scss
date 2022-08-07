@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: #0b0b0b;
+}
+
+.profile {
+  border-radius: 100%;
+  object-fit: cover;
+  height: 150px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.work {
+  background: #061009;
+}
