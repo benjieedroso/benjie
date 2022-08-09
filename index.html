@@ -10,189 +10,239 @@
     </style>
   </head>
   <body>
-    <div id="app h-full w-full">
-      <div class="nav p-7">
-        <nav class="flex justify-between">
-          <div class="font-bold text-2xl text-gray-300">Benjie</div>
-          <button class="bg-none">
-            <img src="./assets/navbutton.png" />
-          </button>
-        </nav>
-      </div>
-      <div class="hero mb-12">
-        <img
-          src="./assets/profile.jpg"
-          alt="photo of benjie edroso"
-          width="150"
-          height="150"
-          class="profile mx-auto"
-        />
-        <p class="text-center text-gray-300 text-xl p-7">
-          A passionate developer from Philippines. Currently focusing in
-          frontend development.
-        </p>
-        <h2 class="text-gray-300 text-5xl font-semibold text-center p-6">
-          Turn creative ideas into great
-          <span class="text-green-300">digital experiences</span>.
-        </h2>
-      </div>
-      <div class="skills p-7">
-        <ul class="opacity-40">
-          <div class="flex justify-between pb-8">
-            <li><img src="./assets/language-html5.png" alt="html5" /></li>
-            <li><img src="./assets/language-css3.png" alt="css3" /></li>
-            <li>
-              <img src="./assets/language-javascript.png" alt="javascript" />
-            </li>
-            <li><img src="./assets/bootstrap.png" alt="bootstrap" /></li>
-          </div>
-          <div class="flex justify-evenly">
-            <li><img src="./assets/tailwind.png" alt="tailwindcss" /></li>
-            <li><img src="./assets/git.png" alt="git version control" /></li>
-            <li><img src="./assets/Figma.png" alt="figma" /></li>
-          </div>
-        </ul>
-      </div>
-      <div class="works p-7">
-        <div
-          class="work mb-16 rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
-        >
-          <img
-            src="./assets/osiris.png"
-            alt="osiris project"
-            class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover"
-            height="368"
-          />
-          <div class="px-7 pt-7">
-            <h3 class="font-semibold text-gray-300 text-3xl pb-4">Osiris</h3>
-            <p class="text-gray-300 text-xl pb-4">
-              a responsive interior company design web page
-            </p>
-            <span class="text-gray-400 font-light text-sm"
-              >HTML . CSS . JS</span
+    <div id="app test h-full w-full">
+      <div class="app-cont">
+        <div class="nav p-7 fixed w-full z-30 md:p-10">
+          <nav class="flex justify-between">
+            <div class="font-bold text-2xl text-gray-300">Benjie</div>
+            <button
+              class="bg-none menu-btn transition-all eas-in-out duration-300 xl:hidden"
             >
-          </div>
-          <div class="p-7">
-            <ul class="flex">
-              <li class="mr-4">
-                <a
-                  href="https://osiris-omega.vercel.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/open-in-new.png"
-                /></a>
+              <img src="./assets/navbutton.png" class="pointer-events-none" />
+            </button>
+            <ul class="text-gray-300 flex gap-10 desktop-nav">
+              <li><a href="#skills" data-section-type="skills">Skills</a></li>
+              <li><a href="#works" data-section-type="works">Works</a></li>
+              <li>
+                <a href="#contact" data-section-type="contact">Contact</a>
               </li>
               <li>
                 <a
-                  href="https://github.com/BenjieEdroso/osiris"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/github.png" alt="github"
-                /></a>
+                  href="#"
+                  class="border border-green-300 rounded-lg px-12 py-3 text-green-300"
+                  >Resume</a
+                >
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <div
-          class="work mb-16 rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
-        >
+        <div class="hero mb-12 pt-40">
           <img
-            src="./assets/teami.png"
-            alt="teami project"
-            class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover"
-            height="368"
+            src="./assets/profile.jpg"
+            alt="photo of benjie edroso"
+            width="150"
+            height="150"
+            class="profile mx-auto"
           />
-          <div class="px-7 pt-7">
-            <h3 class="font-semibold text-gray-300 text-3xl pb-4">Teami</h3>
-            <p class="text-gray-300 text-xl pb-4">
-              a responsive company team web page
-            </p>
-            <span class="text-gray-400 font-light text-sm">HTML . CSS</span>
-          </div>
-          <div class="p-7">
-            <ul class="flex">
-              <li class="mr-4">
-                <a
-                  href="https://team-page-omega.vercel.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/open-in-new.png"
-                /></a>
-              </li>
+          <p
+            class="text-center text-gray-300 text-xl p-7 md:p-10 lg:px-80 xl:px-96"
+          >
+            A passionate developer from Philippines. Currently focusing in
+            frontend development.
+          </p>
+          <h2
+            class="text-gray-300 text-5xl font-semibold text-center p-6 xl:px-96"
+          >
+            Turn creative ideas into great
+            <span class="text-green-300">digital experiences</span>.
+          </h2>
+        </div>
+        <div class="skills p-7 md:py-10 px-28 lg:px-60 xl:px-96">
+          <ul class="opacity-40">
+            <div class="flex justify-between pb-8">
+              <li><img src="./assets/language-html5.png" alt="html5" /></li>
+              <li><img src="./assets/language-css3.png" alt="css3" /></li>
               <li>
-                <a
-                  href="https://github.com/BenjieEdroso/teami"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/github.png" alt="github"
-                /></a>
+                <img src="./assets/language-javascript.png" alt="javascript" />
               </li>
-            </ul>
+              <li><img src="./assets/bootstrap.png" alt="bootstrap" /></li>
+            </div>
+            <div class="flex justify-evenly">
+              <li><img src="./assets/tailwind.png" alt="tailwindcss" /></li>
+              <li><img src="./assets/git.png" alt="git version control" /></li>
+              <li><img src="./assets/Figma.png" alt="figma" /></li>
+            </div>
+          </ul>
+        </div>
+        <div class="works p-7 lg:p-40">
+          <div
+            class="work mx-auto mb-16 w-fit rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl xl:flex"
+          >
+            <img
+              src="./assets/osiris.png"
+              alt="osiris project"
+              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-tr-none rounded-bl-3xl"
+              height="368"
+            />
+            <div class="px-7 pt-7 work-content">
+              <h3 class="font-semibold text-gray-300 text-3xl pb-4">Osiris</h3>
+              <p class="text-gray-300 text-xl pb-4">
+                a responsive interior company design web page
+              </p>
+              <span class="text-gray-400 font-light text-sm"
+                >HTML . CSS . JS</span
+              >
+            </div>
+            <div class="p-7">
+              <ul class="flex">
+                <li class="mr-4">
+                  <a
+                    href="https://osiris-omega.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/open-in-new.png"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/BenjieEdroso/osiris"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/github.png" alt="github"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="work mb-16 mx-auto w-fit flex rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
+          >
+            <img
+              src="./assets/teami.png"
+              alt="teami project"
+              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-tr-none rounded-bl-3xl"
+              height="368"
+            />
+            <div class="px-7 pt-7 work-content">
+              <h3 class="font-semibold text-gray-300 text-3xl pb-4">Teami</h3>
+              <p class="text-gray-300 text-xl pb-4">
+                a responsive company team web page
+              </p>
+              <span class="text-gray-400 font-light text-sm">HTML . CSS</span>
+            </div>
+            <div class="p-7">
+              <ul class="flex">
+                <li class="mr-4">
+                  <a
+                    href="https://team-page-omega.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/open-in-new.png"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/BenjieEdroso/teami"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/github.png" alt="github"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="work mb-16 flex w-fit mx-auto rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
+          >
+            <img
+              src="./assets/poro.png"
+              alt="poro project"
+              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-bl-3xl rounded-tr-none"
+              height="368"
+            />
+            <div class="px-7 pt-7 work-content">
+              <h3 class="font-semibold text-gray-300 text-3xl pb-4">Poro</h3>
+              <p class="text-gray-300 text-xl pb-4">
+                a responsive 404 page not found web page
+              </p>
+              <span class="text-gray-400 font-light text-sm">HTML . CSS</span>
+            </div>
+            <div class="p-7">
+              <ul class="flex">
+                <li class="mr-4">
+                  <a
+                    href="https://404-page-ochre.vercel.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/open-in-new.png"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/BenjieEdroso/poro"
+                    rel="noreferrer"
+                    target="_blank"
+                    ><img src="./assets/github.png" alt="github"
+                  /></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div
-          class="work mb-16 rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
-        >
-          <img
-            src="./assets/poro.png"
-            alt="poro project"
-            class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover"
-            height="368"
-          />
-          <div class="px-7 pt-7">
-            <h3 class="font-semibold text-gray-300 text-3xl pb-4">Poro</h3>
-            <p class="text-gray-300 text-xl pb-4">
-              a responsive 404 page not found web page
-            </p>
-            <span class="text-gray-400 font-light text-sm">HTML . CSS</span>
-          </div>
-          <div class="p-7">
-            <ul class="flex">
-              <li class="mr-4">
-                <a
-                  href="https://404-page-ochre.vercel.app/"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/open-in-new.png"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/BenjieEdroso/poro"
-                  rel="noreferrer"
-                  target="_blank"
-                  ><img src="./assets/github.png" alt="github"
-                /></a>
-              </li>
-            </ul>
-          </div>
+        <div class="contact p-7 text-center">
+          <h2 class="font-semibold text-3xl text-gray-300 mb-6">
+            Get in touch
+          </h2>
+          <p class="text-gray-300 text-xl pb-20 lg:px-52 xl:px-96">
+            I’m available for any new opportunities, you can leave me a message
+            my inbox is always open.
+          </p>
+          <a
+            href="mailto:benjie.a.edroso@gmail.com"
+            class="border border-green-300 rounded-lg px-12 py-3 text-green-300"
+            >Say Hello</a
+          >
+          <ul class="flex justify-between mt-20 w-28 mx-auto mb-20">
+            <li>
+              <a href="#"
+                ><img src="./assets/linkedin.png" alt="linked in"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/github2.png" alt="github " /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/instagram.png" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+          <span class="text-gray-300 text-xl mb-10"
+            >Designed & built by Benjie Edroso</span
+          >
         </div>
-      </div>
-      <div class="contact p-7 text-center">
-        <h2 class="font-semibold text-3xl text-gray-300 mb-6">Get in touch</h2>
-        <p class="text-gray-300 text-xl pb-20">
-          I’m available for any new opportunities, you can leave me a message my
-          inbox is always open.
-        </p>
-        <a
-          href="mailto:benjie.a.edroso@gmail.com"
-          class="border border-green-300 rounded-lg px-12 py-3 text-green-300"
-          >Say Hello</a
-        >
-        <ul class="flex justify-between mt-20 w-28 mx-auto mb-20">
-          <li>
-            <a href="#"><img src="./assets/linkedin.png" alt="linked in" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/github2.png" alt="github " /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./assets/instagram.png" alt="instagram" /></a>
-          </li>
-        </ul>
-        <span class="text-gray-300 text-xl mb-10"
-          >Designed & built by Benjie Edroso</span
-        >
+        <div class="social">
+          <ul class="flex flex-col gap-5">
+            <li>
+              <a href="#"><img src="./assets/linkedin.png" alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/github2.png" alt="github" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/instagram.png" alt="instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sideemail">
+          <ul>
+            <li>
+              <a href="#" class="text-green-300">benjie.a.edroso@gmail.com</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script type="module" src="/main.js"></script>
