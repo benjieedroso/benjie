@@ -27,6 +27,7 @@ body {
 .work {
   background: #061009;
 }
+
 .menu-button {
   transition: all ease-in-out 300ms;
 }
@@ -40,6 +41,17 @@ body {
   z-index: 50;
   transform: translateX(100%);
   transition: all ease-in-out 300ms;
+}
+.hero-intro {
+  max-width: 596px;
+}
+
+.hero-sub-intro {
+  max-width: 627px;
+}
+
+.skills {
+  max-width: 382px;
 }
 
 @media screen and (min-width: 1280px) {

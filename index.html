@@ -20,7 +20,7 @@
             >
               <img src="./assets/navbutton.png" class="pointer-events-none" />
             </button>
-            <ul class="text-gray-300 flex gap-10 desktop-nav">
+            <ul class="text-gray-300 flex gap-10 desktop-nav hidden xl:flex">
               <li><a href="#skills" data-section-type="skills">Skills</a></li>
               <li><a href="#works" data-section-type="works">Works</a></li>
               <li>
@@ -44,20 +44,18 @@
             height="150"
             class="profile mx-auto"
           />
-          <p
-            class="text-center text-gray-300 text-xl p-7 md:p-10 lg:px-80 xl:px-96"
-          >
+          <p class="hero-intro mx-auto text-center text-gray-300 text-xl p-7">
             A passionate developer from Philippines. Currently focusing in
             frontend development.
           </p>
           <h2
-            class="text-gray-300 text-5xl font-semibold text-center p-6 xl:px-96"
+            class="hero-sub-intro mx-auto text-gray-300 text-5xl font-semibold text-center p-6 sm:px-20"
           >
             Turn creative ideas into great
             <span class="text-green-300">digital experiences</span>.
           </h2>
         </div>
-        <div class="skills p-7 md:py-10 px-28 lg:px-60 xl:px-96">
+        <div class="skills p-7 mx-auto">
           <ul class="opacity-40">
             <div class="flex justify-between pb-8">
               <li><img src="./assets/language-html5.png" alt="html5" /></li>
@@ -76,13 +74,13 @@
         </div>
         <div class="works p-7 lg:p-40">
           <div
-            class="work mx-auto mb-16 w-fit rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl xl:flex"
+            class="work mb-16 w-full mx-auto rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl lg:w-fit xl:flex"
           >
             <img
               src="./assets/osiris.png"
               alt="osiris project"
-              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-tr-none rounded-bl-3xl"
-              height="368"
+              class="work-image w-full object-cover rounded-bl-none rounded-tl-3xl rounded-tr-3xl xl:rounded-tr-none xl:rounded-bl-3xl"
+              height="290"
             />
             <div class="px-7 pt-7 work-content">
               <h3 class="font-semibold text-gray-300 text-3xl pb-4">Osiris</h3>
@@ -115,13 +113,13 @@
             </div>
           </div>
           <div
-            class="work mb-16 mx-auto w-fit flex rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
+            class="work mb-16 w-full mx-auto rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl lg:w-fit xl:flex"
           >
             <img
               src="./assets/teami.png"
-              alt="teami project"
-              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-tr-none rounded-bl-3xl"
-              height="368"
+              alt="osiris project"
+              class="work-image w-full object-cover rounded-bl-none rounded-tl-3xl rounded-tr-3xl xl:rounded-tr-none xl:rounded-bl-3xl"
+              height="290"
             />
             <div class="px-7 pt-7 work-content">
               <h3 class="font-semibold text-gray-300 text-3xl pb-4">Teami</h3>
@@ -152,13 +150,13 @@
             </div>
           </div>
           <div
-            class="work mb-16 flex w-fit mx-auto rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl"
+            class="work mb-16 w-full mx-auto rounded-bl-3xl rounded-br-3xl h-auto rounded-tl-3xl rounded-tr-3xl lg:w-fit xl:flex"
           >
             <img
               src="./assets/poro.png"
-              alt="poro project"
-              class="work-image w-full rounded-tl-3xl bg-white rounded-tr-3xl object-cover xl:rounded-bl-3xl rounded-tr-none"
-              height="368"
+              alt="osiris project"
+              class="work-image w-full object-cover rounded-bl-none rounded-tl-3xl rounded-tr-3xl xl:rounded-tr-none xl:rounded-bl-3xl"
+              height="290"
             />
             <div class="px-7 pt-7 work-content">
               <h3 class="font-semibold text-gray-300 text-3xl pb-4">Poro</h3>
@@ -221,7 +219,7 @@
             >Designed & built by Benjie Edroso</span
           >
         </div>
-        <div class="social">
+        <div class="social hidden xl:block">
           <ul class="flex flex-col gap-5">
             <li>
               <a href="#"><img src="./assets/linkedin.png" alt="linkedin" /></a>
@@ -236,7 +234,7 @@
             </li>
           </ul>
         </div>
-        <div class="sideemail">
+        <div class="sideemail hidden xl:block">
           <ul>
             <li>
               <a href="#" class="text-green-300">benjie.a.edroso@gmail.com</a>
