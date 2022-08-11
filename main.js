@@ -33,6 +33,17 @@ function scrollToPageSection(targetElement) {
 	scrollTo.scrollIntoView();
 }
 
+function disbaleMobileNavAtDesktop() {
+	let browserWidth = window.innerWidth;
+	let smallDesktopSize = 1280;
+	let mobileNav = document.querySelector(".mobileNav");
+
+	if (mobileNav && browserWidth >= smallDesktopSize) {
+		mobileNav.remove();
+	}
+}
+
+window.addEventListener("resize", disbaleMobileNavAtDesktop);
 navButton.addEventListener("click", () => {
 	insertNavElement(navbar, body[0], app);
 
