@@ -8,7 +8,7 @@ const mobileNav = `
       <li><a href="#works" data-section-type="works"  class="text-gray-300 text-xl">Works</a></li>
       <li><a href="#contact" data-section-type="contact"  class="text-gray-300 text-xl">Contact</a></li>
       <li>
-        <a href="/resume.pdf" download class="border border-green-300 rounded-lg px-12 py-3 text-green-300">Resume</a>
+        <a href="Resume.pdf" download class="border border-green-300 rounded-lg px-12 py-3 text-green-300">Resume</a>
       </li>
     </ul>
 </div>`;
