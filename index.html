@@ -78,16 +78,22 @@
 					<h2 class="font-semibold text-3xl text-gray-300 mb-6">Get in touch</h2>
 					<p class="text-gray-300 text-xl pb-20 lg:px-52 xl:px-96">I’m available for any new opportunities, you can leave me a message my inbox is always open.</p>
 					<form method="post" class="w-96 mx-auto" id="contactForm">
+						<input type="hidden" name="_captcha" value="false" />
+						<input type="hidden" name="_next" value="https://benjieedroso.vercel.app/thanks.html" />
 						<label class="block text-left mb-3">
-							<span class="text-green-700">Name</span>
-							<input type="text" name="name" id="name" class="block mt-1 w-full shadow-sm form-input rounded-md focus:ring focus:border-green-300 focus:ring-green-200 focus:ring-opacity-50" />
+							<span class="text-green-700">Firstname</span>
+							<input
+								type="text"
+								name="firstname"
+								id="firstname"
+								class="block mt-1 w-full shadow-sm form-input rounded-md focus:ring focus:border-green-300 focus:ring-green-200 focus:ring-opacity-50" />
 						</label>
 						<label class="block text-left mb-3">
 							<span class="text-green-700">Email</span>
 							<input
 								type="email"
-								name="name"
-								id="name"
+								name="email"
+								id="email"
 								placeholder="ex. john@domain.com"
 								class="block w-full shadow-sm mt-1 form-input rounded-md focus:ring focus:border-green-300 focus:ring-green-200 focus:ring-opacity-50" />
 						</label>
@@ -142,6 +148,5 @@
 			</div>
 		</div>
 		<script type="module" src="/main.js"></script>
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 </html>

@@ -4,6 +4,7 @@ let navButton = document.querySelector(".menu-btn");
 let app = document.querySelector(".app-cont");
 let navbar = document.querySelector(".nav");
 let body = document.getElementsByTagName("body");
+const EMAIL = import.meta.env.VITE_EMAIL;
 
 function insertNavElement(navbarElement, bodyElement, appContElement) {
 	navbarElement.classList.add("z-10");
@@ -71,13 +72,7 @@ desktopNavLinks.forEach((link) => {
 });
 
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", (e) => {
-	e.preventDefault();
-	Email.send({
-		SecureToken: "3d1e4f21-c1fa-47f3-8b05-db6ebeafd6eb",
-		To: "benjie.edroso@gmail.com",
-		From: "testing@gmail.com",
-		Subject: "This is the subject",
-		Body: "And this is the body",
-	}).then((message) => alert(message));
+contactForm.setAttribute("action", `https://formsubmit.co/${EMAIL}`);
+contactForm.addEventListener("submit", () => {
+	location.href = "https://benjieedroso.vercel.app/";
 });
