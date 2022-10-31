@@ -69,3 +69,15 @@ desktopNavLinks.forEach((link) => {
 		removeInsertedNav(body[0], app, navTransition);
 	});
 });
+
+const contactForm = document.getElementById("contactForm");
+contactForm.addEventListener("submit", (e) => {
+	e.preventDefault();
+	Email.send({
+		SecureToken: "3d1e4f21-c1fa-47f3-8b05-db6ebeafd6eb",
+		To: "benjie.edroso@gmail.com",
+		From: "testing@gmail.com",
+		Subject: "This is the subject",
+		Body: "And this is the body",
+	}).then((message) => alert(message));
+});
